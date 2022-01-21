@@ -14,6 +14,10 @@ body{
     font-family: 'Lato', sans-serif;
     font-family: 'Questrial', sans-serif;
     margin: 0;
+    transition: transform 0.5s ease;
+}
+body.show-nav{
+    transform: translate(200px);
 }
 
 nav{
@@ -93,7 +97,7 @@ button:focus{
     outline: none;
 }
 
-.toogle{
+.toggle{
     background-color: rgba(0, 0, 0, 0.3);
     position:absolute ;
     color: white;
@@ -119,7 +123,10 @@ button:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    /* display: none; */
+    display: none;
+}
+.modal-container.show-modal{
+    display: block;
 }
 
 .modal{
@@ -133,6 +140,8 @@ button:focus{
     transform: translate(-50%,-50%);
     max-width: 100%;
     width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
 }
 .modal-header{
     background-color: var(--primary-color);
@@ -149,7 +158,7 @@ button:focus{
     padding: 20px;
 }
 .modal-form{
-    margin: 30px 0;
+    margin: 15px 0;
 }
 .modal-form label{
     display: block;
@@ -166,4 +175,13 @@ button:focus{
     right: 0;
     font-size: 24px;
     color: white;
+}
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
