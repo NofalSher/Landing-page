@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <!-- We can link to font awesome by writing font awesome cdn and copy link of that cdn -->
+
+    <!--This nav link is our left navigation  -->
+    <nav>
+        <div class="logo"></div>
+        <img src="https://randomuser.me/api/portraits/thumb/men/79.jpg" alt="user">
+
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus necessitatibus ipsam facere
+            mollitia optio itaque veniam repellat nesciunt aliquid excepturi sit exercitationem, veritatis dolorum,
+            consequatur rem? Cumque, temporibus nihil.</p>
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Who are you?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque distinctio, ea dolor at ratione nihil ex
+            neque quos laudantium maiores quod dolore corrupti perferendis minus molestiae consectetur voluptatibus
+            provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque distinctio, ea dolor at ratione nihil ex
+            neque quos laudantium maiores quod dolore corrupti perferendis minus molestiae consectetur voluptatibus
+            provident.</p>
+        <h2>Learn More</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi aperiam excepturi provident
+            dolorem atque beatae sunt deserunt libero delectus, odit facere reprehenderit qui esse ipsa voluptates
+            explicabo quas. Facilis.</p>
+        <h2>Projects</h2>
+        <li>Project1</li>
+        <li>Project2</li>
+        <li>Project3</li>
+        <li>Project4</li>
+        <li>Project5</li>
+
+        <!-- Modal Window... Pop up box for sign up window -->
+        <div class="model-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="modal-content">
+                    <p>Register For classes</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter Email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="Password" placeholder="Enter Password">
+                        </div>
+                        <div>
+                             <label for="password2">Confirm Password</label>
+                            <input type="password" id="Password2" placeholder="Confirm Password">
+                        </div>
+                        <input type="submit" value="submit" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
